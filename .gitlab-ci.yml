@@ -1,0 +1,12 @@
+# Define the image
+image: node:latest
+
+# Define the stages
+stages:
+  - execute
+
+# Job for executing JavaScript code
+execute_code:
+  stage: execute
+  script:
+    - echo "console.log(10);" | node
